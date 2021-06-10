@@ -1,0 +1,12 @@
+[submodule "apps/cine"]
+	path = apps/cine
+	url = https://github.com/ferzeg3420/cine.git
+[submodule "apps/poker"]
+	path = apps/poker
+	url = https://github.com/ferzeg3420/poker_dealer.git
+[submodule "apps/_default/personal_page_v2"]
+	path = apps/_default/personal_page_v2
+	url = https://github.com/ferzeg3420/personal_page_v2.git
+[submodule "apps/timers/static/timersWebpack"]
+	path = apps/timers/static/timersWebpack
+	url = https://github.com/ferzeg3420/timers.git
