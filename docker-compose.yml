@@ -41,14 +41,11 @@ services:
     restart: always
     image: ferzeg-py4web
     build: ./ferzeg-py4web
-    container_name: ferzeg-website-py4web
+    container_name: py4web
     ports:
       - "8000:8000"
     volumes:
-      - "/etc/nginx/conf.d"
-      - "/etc/nginx/vhost.d"
-      - "/usr/share/nginx/html"
-      - "./volumes/proxy/certs:/etc/nginx/certs:ro"
+      - "./certs:/etc/nginx/certs:ro"
     volumes_from:
       - nginx
 
