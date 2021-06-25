@@ -1,0 +1,894 @@
+    1  ls
+    2  python -v
+    3  python3 -v
+    4  ls
+    5  python3 --version
+    6  python3 -m venv py4web
+    7  apt-get install python3-venv
+    8  ls
+    9  python3 -m venv py4web
+   10  sudo apt install curl gnupg2 ca-certificates lsb-release
+   11  echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx"     | sudo tee /etc/apt/sources.list.d/nginx.list
+   12  echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n"     | sudo tee /etc/apt/preferences.d/99nginx
+   13  curl -o /tmp/nginx_signing.key https://nginx.org/keys/nginx_signing.key
+   14  gpg --dry-run --quiet --import --import-options show-only /tmp/nginx_signing.key
+   15  gpg --with-fingerprint /tmp/nginx_signing.key
+   16  ls
+   17  pwd
+   18  ls
+   19  pwd
+   20  gpg --dry-run --quiet --import --import-options show-only /tmp/nginx_signing.key
+   21  sudo mv /tmp/nginx_signing.key /etc/apt/trusted.gpg.d/nginx_signing.asc
+   22  sudo apt update
+   23  sudo apt install nginx
+   24  s
+   25  ls
+   26  apt-get update && apt-get upgrade
+   27  hostnamectl set-hostname py4webHost
+   28  date
+   29  ls
+   30  dpkg-reconfigure tzdata
+   31  ls
+   32  adduser fernando
+   33  adduser fernando sudo
+   34  mkdir -p ~/.ssh && sudo chmod -R 700 ~/.ssh/
+   35  ls
+   36  pwd
+   37  cd /
+   38  ls
+   39  vim etc/ssh/sshd_config
+   40  ls
+   41  pwd
+   42  cd /
+   43  ls
+   44  history | less
+   45  ls
+   46  nginx -s reload
+   47  ps -a | less
+   48  ps -ax
+   49  ps -ax | grep "nginx"
+   50  ls
+   51  systemctl status nginx
+   52  ls
+   53  vim nginx.conf 
+   54  ls
+   55  vim nginx.conf 
+   56  lsb_release -a
+   57  snapd
+   58  sudo apt list --installed
+   59  sudo apt list --installed | less
+   60  sudo snap install --classic certbot
+   61  ls
+   62  cd apps/
+   63  ls
+   64  cd /etc/nginx/
+   65  ls
+   66  pwd
+   67  ls
+   68  source fernandoPy4web/bin/activate
+   69  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+   70  ls
+   71  pip install pandas
+   72  pip install sklearn
+   73  pip install bottle-websocket
+   74  pip list
+   75  pwd
+   76  ls
+   77  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+   78  ls
+   79  ps -p
+   80  ps -a
+   81  ps -e
+   82  ps -e | less
+   83  kill 17780
+   84  ps -e | less
+   85  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+   86  ls
+   87  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+   88  source fernandoPy4web/bin/activate
+   89  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+   90  ls
+   91  ps -e |less
+   92  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+   93  ls
+   94  cd apps/
+   95  ls
+   96  cd cine/
+   97  ls
+   98  rm -r __pycache__/
+   99  ls
+  100  cd static/
+  101  ls
+  102  cd ..
+  103  ls
+  104  cd ..
+  105  ls
+  106  cd timers/
+  107  ls
+  108  cd ..
+  109  ls
+  110  mv timers/ timersWebpack
+  111  mkdir timers
+  112  ls
+  113  rmdir tiemrs
+  114  rmdir timers
+  115  cd ..
+  116  ls
+  117  py4web 
+  118  py4web new_app
+  119  py4web new_app apps/
+  120  py4web new_app apps/ timers
+  121  ls
+  122  cd apps/
+  123  ls
+  124  cd timers
+  125  ls
+  126  cd ..
+  127  ls
+  128  cd cine/
+  129  ls
+  130  mkdir databases
+  131  ls
+  132  cd ..
+  133  ls
+  134  cd timers
+  135  ls
+  136  cd templates/
+  137  ls
+  138  cd ..
+  139  ls
+  140  cd static/
+  141  ls
+  142  cd ..
+  143  ls
+  144  vim controllers.py 
+  145  ls
+  146  mv ../timersWebpack/ static/
+  147  ls
+  148  cd static/
+  149  ls
+  150  cd timersWebpack/
+  151  ls
+  152  cd dist
+  153  ls
+  154  cd build/
+  155  ls
+  156  cp -i index.html ../../../templates/
+  157  ls
+  158  cp -i index.js ../../js/
+  159  ls
+  160  cd ..
+  161  ls
+  162  cd ..
+  163  ls
+  164  cd ..
+  165  ls
+  166  cd templates/
+  167  ls
+  168  vim index.html 
+  169  cd ..
+  170  ls
+  171  cd templates/
+  172  ls
+  173  less layout.html 
+  174  less index.html 
+  175  cd ..
+  176  ls
+  177  cd ..
+  178  ls
+  179  pwd
+  180  rm -r __pycache__/
+  181  cd ..
+  182  ls
+  183  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  184  ls
+  185  cd apps/
+  186  ls
+  187  cd timers/
+  188  ls
+  189  cd static/js/
+  190  ls
+  191  less index.js 
+  192  ls
+  193  cd ..
+  194  ls
+  195  cd timersWebpack/
+  196  ls
+  197  cd source/
+  198  ls
+  199  cd ..
+  200  ls
+  201  cd ..
+  202  ls
+  203  pwd
+  204  ls
+  205  cd js/
+  206  ls
+  207  less index.js 
+  208  cd ..
+  209  ls
+  210  cd ..
+  211  ls
+  212  cd templates/
+  213  ls
+  214  vim index.html 
+  215  cd ..
+  216  ls
+  217  vim controllers.py 
+  218  ls
+  219  less ../poker_dealer/templates/index.html 
+  220  vim templates/index.html 
+  221  ls
+  222  cd ..
+  223  ls
+  224  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  225  pwd
+  226  cd ..
+  227  ls
+  228  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  229  ls
+  230  cd apps/
+  231  ls
+  232  cd timers/
+  233  ls
+  234  cd templates/
+  235  ls
+  236  cd ..
+  237  vim controllers.py 
+  238  cd ..
+  239  ls
+  240  cd ..
+  241  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  242  ls
+  243  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  244  ls
+  245  vim layout.html 
+  246  pwd
+  247  cd ..
+  248  ls
+  249  vim controllers.py 
+  250  ls
+  251  cd ..
+  252  pwd
+  253  cd ..
+  254  ls
+  255  source fernandoPy4web/bin/activate
+  256  ls
+  257  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  258  ls
+  259  cd fernandoPy4web/
+  260  ls
+  261  cd ..
+  262  ls
+  263  cd apps/
+  264  ls
+  265  cd timers/
+  266  ls
+  267  cd templates/
+  268  ls
+  269  vim layout.html 
+  270  ls
+  271  vim index.html 
+  272  cd ..
+  273  ls
+  274  cd static/js/
+  275  ls
+  276  vim index.js 
+  277  ls
+  278  s
+  279  ls
+  280  cd ..
+  281  ls
+  282  cd timersWebpack/
+  283  ls
+  284  git log
+  285  ls
+  286  git pull
+  287  git log
+  288  ls
+  289  cd build/
+  290  ls
+  291  cp -i index.html ../../../templates/index2.html
+  292  cp -i index.js ../../js/index.js 
+  293  ls
+  294  cd ../..
+  295  ls
+  296  cd ..
+  297  ls
+  298  cd templates/
+  299  ls
+  300  vim index2.html index.html 
+  301  ls
+  302  rm index.html 
+  303  mv index2.html index.html
+  304  ls
+  305  cd ~
+  306  ls
+  307  cd py4web/
+  308  ls
+  309  cd ..
+  310  ls
+  311  cd /
+  312  ls
+  313  cd home/fernando/
+  314  ls
+  315  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  316  ls
+  317  cd apps/timers/
+  318  ls
+  319  vim templates/index.html ../poker_dealer/templates/index.html 
+  320  ls
+  321  cd ../..
+  322  ls
+  323  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  324  ls
+  325  cd apps/
+  326  ls
+  327  cd timers/
+  328  ls
+  329  cd templates/
+  330  ls
+  331  vim index.html 
+  332  ls
+  333  cd ..
+  334  ls
+  335  cd static/
+  336  ls
+  337  cd timersWebpack/
+  338  ls
+  339  cd build/
+  340  ls
+  341  less index.html 
+  342  cd ..
+  343  ls
+  344  cd ..
+  345  ls
+  346  cd js/
+  347  ls
+  348  cd ..
+  349  ls
+  350  cd ..
+  351  ls
+  352  cd templates/
+  353  ls
+  354  vim layout.html 
+  355  ls
+  356  cd ..
+  357  ls
+  358  cd ..
+  359  ls
+  360  cd ..
+  361  ls
+  362  cd ..
+  363  ls
+  364  cd fernando/
+  365  ls
+  366  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  367  ls
+  368  cd apps/
+  369  ls
+  370  cd timers/
+  371  ls
+  372  cd static/
+  373  ls
+  374  cd timersWebpack/
+  375  ls
+  376  git pull
+  377  ls
+  378  cd build/
+  379  ls
+  380  cp -i index.js ../../js/index.js 
+  381  cd /home/fernando/
+  382  ls
+  383  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  384  ls
+  385  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem &
+  386  ls
+  387  ps -e | less
+  388  kill 51121
+  389  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  390  ls
+  391  cd apps/
+  392  ls
+  393  cd ..
+  394  py4web new_app
+  395  py4web new_app apps/ 
+  396  py4web new_app apps/ _default
+  397  cd apps/
+  398  ls
+  399  cd _default/
+  400  ls
+  401  git clone https://github.com/ferzeg3420/personal_page_v2.git
+  402  ls
+  403  cd personal_page_v2/
+  404  ls
+  405  cd node_modules/
+  406  ls
+  407  cd ..
+  408  ls
+  409  mkdir ../static/images
+  410  cp -ri images/ ../static/
+  411  cd ..
+  412  ls
+  413  cd static/
+  414  ls
+  415  cd images/
+  416  ls
+  417  cd ..
+  418  ls
+  419  cd ..
+  420  ls
+  421  cd personal_page_v2/
+  422  ls
+  423  cd ..
+  424  ls
+  425  cd static/
+  426  ls
+  427  cd css/
+  428  ls
+  429  cp ../../personal_page_v2/style.css .
+  430  cd ../js/
+  431  cp ../../personal_page_v2/script.js .
+  432  ls
+  433  cd ../../templates/
+  434  ls
+  435  mv index.html indexSav.html
+  436  cp ../personal_page_v2/index.html .
+  437  ls
+  438  vim index.html indexSav.html 
+  439  ls
+  440  vim layout.html index.html 
+  441  ls
+  442  cd /home/fernando/
+  443  ls
+  444  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  445  ls
+  446  cd apps/
+  447  ls
+  448  cd _default/
+  449  ls
+  450  cd templates/
+  451  ls
+  452  vim index.html 
+  453  pwd
+  454  cd ..
+  455  ls
+  456  cd /home/fernando/
+  457  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  458  ls
+  459  cd apps/
+  460  ls
+  461  cd _default/
+  462  ls
+  463  vim templates/index.html 
+  464  cd /home/fernando/
+  465  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  466  ls
+  467  cd apps/
+  468  ls
+  469  rm -r __pycache__/
+  470  cd _default/
+  471  ls
+  472  rm -r __pycache__/
+  473  cd ..
+  474  ls
+  475  cd ..
+  476  ls
+  477  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  478  ls
+  479  cd apps/_default/
+  480  ls
+  481  cd templates/
+  482  fg
+  483  ls -la
+  484  rm indexSav.html 
+  485  cd ..
+  486  ls
+  487  vim controllers.py 
+  488  ls
+  489  cd templates/
+  490  ls
+  491  vim index.html 
+  492  cd /home/fernando/
+  493  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  494  ls
+  495  vim apps/_default/templates/index.html 
+  496  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem
+  497  ls
+  498  cd apps/
+  499  ls
+  500  mv poker_dealer/ poker
+  501  ls
+  502  cd ..
+  503  ls
+  504  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem &
+  505  ls
+  506  git pull
+  507  cd personal_page_v2/
+  508  ls
+  509  git pull
+  510  ls
+  511  cd ..
+  512  ls
+  513  cd templates/
+  514  ls
+  515  less index.html 
+  516  ls
+  517  cd ..
+  518  ls
+  519  cd personal_page_v2/
+  520  ls
+  521  pwd
+  522  ls
+  523  cp -i index.html ../templates/index2.html 
+  524  ls
+  525  cp -i script.js ../static/js/script2.js 
+  526  ls
+  527  cp -i style.css ../static/css/style2.css 
+  528  ls
+  529  cd ..
+  530  ls
+  531  ps -e
+  532  ps -e | less
+  533  kill 52131
+  534  ls
+  535  cd templates/
+  536  ls
+  537  vim index*
+  538  ls
+  539  mv index.html index.html.sav
+  540  mv index2.html index.html
+  541  ls
+  542  cd ..
+  543  ls
+  544  cd static/js/
+  545  ls
+  546  vim script2.js script.js 
+  547  ls
+  548  mv script.js script.js.sav
+  549  mv script2.js script.js
+  550  ls
+  551  cd ..
+  552  ls
+  553  cd css/
+  554  ls
+  555  mv style.css style.css.sav
+  556  mv style2.css style.css
+  557  ls
+  558  cd ..
+  559  ls
+  560  cd ..
+  561  ls
+  562  cd ..
+  563  ls
+  564  cd poker/
+  565  ls
+  566  git log
+  567  ls
+  568  vim ~/.vimrc
+  569  ls
+  570  pwd
+  571  git pull
+  572  ls
+  573  git pull --force
+  574  git stash 
+  575  git pull
+  576  ls
+  577  git pull --force
+  578  ls
+  579  rm -r  __pycache__/
+  580  ls
+  581  rm -r services/dealer_game/__pycache__/
+  582  git pull
+  583  ls
+  584  cd databases/
+  585  ls
+  586  rm *
+  587  ls
+  588  cd ..
+  589  ls
+  590  cd ..
+  591  ls
+  592  pwd
+  593  cd ..
+  594  ls
+  595  source fernandoPy4web/bin/activate
+  596  ls
+  597  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  598  pwd
+  599  ls
+  600  pwd
+  601  ls
+  602  cd apps/
+  603  ls
+  604  cd _default/
+  605  ls
+  606  ps -e | less
+  607  kill 74014
+  608  cd personal_page_v2/
+  609  ls
+  610  cp -ir images/ ../static/images/
+  611  cd ../static/images/
+  612  ls
+  613  cd images/
+  614  ls
+  615  mv -i * ..
+  616  ls
+  617  cd ..
+  618  ls
+  619  rmdir images
+  620  ls
+  621  cd ..
+  622  ls
+  623  cd ..
+  624  ls
+  625  cd ..
+  626  ls
+  627  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  628  pwd
+  629  kill 74187
+  630  ls
+  631  cd ..
+  632  ls
+  633  source fernandoPy4web/bin/activate
+  634  pwd
+  635  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  636  tail /tmp/py4web.log 
+  637  ls
+  638  cd fernandoPy4web/
+  639  ls
+  640  pwd
+  641  ls
+  642  cd ..
+  643  ls
+  644  cd apps/
+  645  ls
+  646  cd _default/
+  647  ls
+  648  cd personal_page_v2/
+  649  ls
+  650  cd images/
+  651  ls
+  652  du -h
+  653  du -h chloroplethScreen.png 
+  654  du chloroplethScreen.png 
+  655  git log
+  656  ls
+  657  cd ..
+  658  ls
+  659  vim .gitignore
+  660  cd images/
+  661  ls
+  662  touch test.png
+  663  ls
+  664  cd ..
+  665  ls
+  666  git add -A
+  667  git commit -m "test: Added a test file to images to make sure they're being uploaded."
+  668  ls
+  669  cd images
+  670  ls
+  671  rm test.png 
+  672  ls
+  673  cd ..
+  674  ls
+  675  git pull
+  676  ls
+  677  cd images/
+  678  ls
+  679  cd ..
+  680  git log
+  681  ls
+  682  cd images/
+  683  ls
+  684  cd ..
+  685  ls
+  686  cd ..
+  687  ls
+  688  cd personal_page_v2/
+  689  ls
+  690  git pull
+  691  ls
+  692  cd images2/
+  693  ls
+  694  du -h chloroplethScreen.png 
+  695  du -h heatMapScreen.png 
+  696  ls
+  697  cd ..
+  698  ls
+  699  mv -i images2/*  ../static/images/
+  700  ls
+  701  pwd
+  702  cd ..
+  703  ls
+  704  cd ..
+  705  ls
+  706  cd ..
+  707  ls
+  708  ps -e | grep "py4web"
+  709  kill 74203
+  710  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  711  pwd
+  712  ps -e | less
+  713  jobs
+  714  ls
+  715  du -h chloroplethScreen.png 
+  716  ls
+  717  mv -i chloroplethScreen.png cineScreenShot.png  heatMapScreen.png pokerScreenShot.png timersScreenShot.png apps/_default/static/images/
+  718  ls
+  719  cd fernandoPy4web/
+  720  ls
+  721  cd ..
+  722  ls
+  723  cd apps/
+  724  ls
+  725  cd ..
+  726  ls
+  727  jobs
+  728  kill %2
+  729  ps -e | grep "py4web"
+  730  ls
+  731  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  732  ls
+  733  cd apps/
+  734  ls
+  735  cd _default/
+  736  ls
+  737  cd personal_page_v2/
+  738  ls
+  739  git log
+  740  git pull
+  741  ls
+  742  git pull
+  743  ls
+  744  cp -i index.html ../templates/index2.html
+  745  cd ../templates/index2.html
+  746  cd ../templates
+  747  ls
+  748  vim index.html index2.html 
+  749  ls
+  750  mv index.html index.html.sav
+  751  mv index2.html index.html
+  752  ls
+  753  cd ..
+  754  ls
+  755  cd /home/fernando/
+  756  ps -e | grep "py4web"
+  757  kill 74559
+  758  ls
+  759  jobs
+  760  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  761  ls
+  762  cd apps/
+  763  ls
+  764  pwd
+  765  cd _default/
+  766  ls
+  767  vim templates/index.html
+  768  ls
+  769  pwd
+  770  cd templates/
+  771  ls
+  772  cd ../static/css/style.css ../static/js/script.js
+  773  vim ../static/css/style.css ../static/js/script.js
+  774  fg
+  775  ls
+  776  fg
+  777  jobs
+  778  ls
+  779  cd ..
+  780  jobs
+  781  ls
+  782  cd static/js/
+  783  ls
+  784  vim script.js
+  785  cd ../..
+  786  ls
+  787  cd ..
+  788  ls
+  789  pwd
+  790  cd ..
+  791  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  792  ls
+  793  cd apps/
+  794  ls
+  795  cd _default/
+  796  ls
+  797  cd static/
+  798  ls
+  799  cd js/
+  800  ls
+  801  vim script.js
+  802  ls
+  803  vim script.js
+  804  ls
+  805  source fernandoPy4web/bin/activate
+  806  ls
+  807  cd apps/
+  808  ls
+  809  cd _default/
+  810  ls
+  811  vim static/js/
+  812  jobs
+  813  ps -e | grep "py4web"
+  814  ls
+  815  cd apps/
+  816  ls
+  817  cd _default/
+  818  ls
+  819  cd static/js/
+  820  ls
+  821  vim script.js
+  822  ls
+  823  cd ..
+  824  ls
+  825  cd css/
+  826  ls
+  827  vim style.css
+  828  ls
+  829  cd ..
+  830  ls
+  831  cd ..
+  832  ls
+  833  cd templates/
+  834  ls
+  835  vim index.html
+  836  ls
+  837  cd fernandoPy4web/
+  838  ls
+  839  cd ..
+  840  source fernandoPy4web/bin/activate
+  841  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem 1>>/tmp/py4web.log 2>>/tmp/py4web.err &
+  842  cat /tmp/py4web.log
+  843  jobs
+  844  kill %1
+  845  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem &
+  846  ls
+  847  cd apps/
+  848  ls
+  849  cd _default/
+  850  cd templates/
+  851  vim index.html
+  852  vim layout.html 
+  853  ls
+  854  history
+  855  history > historySaveFernando
+  856  ls
+  857  mv historySaveFernando historySaveFernandoSU
+  858  ls
+  859  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem &
+  860  jobs
+  861  cd ~/
+  862  ls
+  863  cd -
+  864  l
+  865  source fernandoPy4web/bin/activate
+  866  ls
+  867  cd apps/
+  868  ls
+  869  pwd
+  870  cd ..
+  871  py4web run -s geventWebSocketServer apps --ssl_cert /etc/letsencrypt/live/ferzeg.com/fullchain.pem --ssl_key /etc/letsencrypt/live/ferzeg.com/privkey.pem &
+  872  jobs
+  873  exit
+  874  ls
+  875  cd /
+  876  ls
+  877  cd /etc/letsencrypt/live/ferzeg.com/
+  878  ls
+  879  ls -l
+  880  cat README 
+  881  ls
+  882  file fullchain.pem 
+  883  ls
+  884  pwd
+  885  ls
+  886  cd /home/fernando/full_ferzeg_website/
+  887  ls
+  888  cp /etc/letsencrypt/live/ferzeg.com/fullchain.pem .
+  889  cp /etc/letsencrypt/live/ferzeg.com/privkey.pem .
+  890  ls
+  891  ls -l
+  892  su - fernando
+  893  ls
+  894  history > /home/fernando/rootHistorySav2
