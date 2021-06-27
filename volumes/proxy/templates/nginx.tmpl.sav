@@ -173,7 +173,7 @@ server {
 		include uwsgi_params;
 		uwsgi_pass {{ trim $proto }}://{{ trim $host }};
 		{{ else }}
-		proxy_pass https://192.168.0.5:8000;
+		proxy_pass {{ trim $proto }}://{{ trim $host }};
 		{{ end }}
 		{{ if (exists (printf "/etc/nginx/htpasswd/%s" $host)) }}
 		auth_basic	"Restricted {{ $host }}";
@@ -207,7 +207,7 @@ server {
 		include uwsgi_params;
 		uwsgi_pass {{ trim $proto }}://{{ trim $host }};
 		{{ else }}
-		proxy_pass https://192.168.0.5:8000;
+		proxy_pass {{ trim $proto }}://{{ trim $host }};
 		{{ end }}
 		{{ if (exists (printf "/etc/nginx/htpasswd/%s" $host)) }}
 		auth_basic	"Restricted {{ $host }}";
